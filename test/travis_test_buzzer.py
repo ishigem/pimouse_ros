@@ -7,7 +7,7 @@ from std_msgs.msg import UInt16
 from pimouse_ros.msg import MusicAction, MusicResult, MusicFeedback, MusicGoal
 
 class BuzzerTest(unittest.TestCase):
-    def setUo(self):
+    def setUp(self):
         self.client = actionlib.SimpleActionClient("Music", MusicAction)
         self.device_values = []
 
